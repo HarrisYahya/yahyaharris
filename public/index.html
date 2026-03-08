@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Facebook Login</title>
-<style>
+ <style>
 
 *{
 margin:0;
@@ -16,9 +17,11 @@ background:#ffffff;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+min-height:100vh;
+padding:20px;
 }
 
+/* main container */
 .container{
 width:100%;
 max-width:380px;
@@ -106,6 +109,36 @@ margin-top:20px;
 color:#444;
 font-weight:500;
 font-size:15px;
+}
+
+/* 📱 Mobile screens */
+@media (max-width:480px){
+
+.container{
+max-width:100%;
+padding:15px;
+}
+
+.logo{
+width:55px;
+height:55px;
+font-size:36px;
+}
+
+.input-box{
+padding:14px;
+font-size:15px;
+}
+
+.login-btn{
+font-size:16px;
+padding:13px;
+}
+
+.create{
+margin-top:60px;
+}
+
 }
 
 </style>
